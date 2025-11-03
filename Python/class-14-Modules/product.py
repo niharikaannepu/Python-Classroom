@@ -71,3 +71,4 @@ for value in product.values():
 #print all key value pair
 for key,value in product.items():
     print(key,"-",value)
+    
