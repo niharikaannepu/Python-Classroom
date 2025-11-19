@@ -1,0 +1,1092 @@
+Python is a general purpose, High level(Human Readable content), interpreted, OOP PL
+Supporting OOP features, functional and scripting Program
+--------> High level code(human readable code) convert to low level code(Machine readable binary form 0,1) using compiler/interpreter
+
+
+OOP
+Hello World
+class Test:
+    **\*\*def greet(self):\*\***
+
+
+
+        **\*\*print("Hello World")\*\***
+
+
+
+        
+
+
+
+
+
+
+
+
+
+t1=Test()
+t1.greet()
+
+
+functional PL
+Hello World
+Python supports functional PL
+
+def greet():
+**print("Hello World")**
+
+
+
+
+greet()
+
+
+Scripting PL
+Hello World
+
+python supports scripting PL
+one.py
+print("Hello World")
+
+
+
+If We install Python Software
+we get inbuilt functions
+we get inbuilt closes
+packages
+modules
+
+Coding editors are
+VS CODE
+Thanny
+Jupter Notebook
+PyCharm
+co-lab
+Anaconda
+
+Python inbuilt Functions = 45
+print()
+input()
+type()
+id()
+len()
+
+14dt function
+
+
+Errors = 25
+Indentation Errors
+def greet():
+print("Hello World") // should give tab space or else it is an indentation error
+greet()
+
+
+Syntax Error
+def 9tv():
+    **\*\*print("GM")\*\***     
+
+
+
+
+while using var, function, class, module should  give proper naming convention
+
+
+type error
+
+CRED operations
+-------------------------------------------------------------------------------------------
+CREATE
+eid = 101
+ename = 'Rahul'
+esal=45000.45
+---------------------------------------------------------------------------------------------
+READ
+print(eid)
+print(ename)
+print(eloc) ## Name Error
+---------------------------------------------------------------------------------------------------
+UPDATE
+ename="Rahul ji"
+print(ename)
+-------------------------------------------------------------------------------------------------------
+DELETE
+del  ename
+print(ename)
+
+
+Program
+#create variable
+eid = 101
+ename = 'Rahul'
+esal=45000.45
+#read variable
+print(eid)
+print(ename)
+#print(eloc) # Name Error
+
+#update
+ename="Rahul ji"
+print(ename)
+
+#delete variable
+del  ename
+print(ename)
+
+
+Python Roadmap
+PY Intro
+py Advantages and features
+Statements , comments
+Identifiers, Rules , KW
+Datatypes inbuilt functions
+Operators
+Py control flow statements
+
+------------------------------------------------------------------------------
+Day-2
+compiler
+Analyze source code if there is no syntax error it compile and execute
+if any syntax error occurs it stops the compilation process  and gives no output
+
+
+
+Interpreter
+Analyze source code if there is no syntax error it will execute
+if an syntax error is there it will execute line by line and gives internal result
+a=2
+b=4
+print(a+b)
+print(c)
+output                                ------------- executes line by line
+6
+Traceback (most recent call last):
+File "C:\Users\nihar\Desktop\Full Stack Python\Backend\Python\Class-2\one.py", line 4, in <module>
+    **\*\*print(c)\*\***
+
+
+
+          **\*\*^\*\***
+
+
+
+
+NameError: name 'c' is not defined
+
+Statements in Python
+Statements
+variable
+    **\*\*eid=101\*\***
+
+
+
+    **\*\*print(id)\*\***
+
+
+
+    **\*\*print(id(eid))\*\***
+
+
+
+
+function
+    **\*\*def wish():\*\***
+
+
+
+    	**\*\*print("GM")\*\***
+
+
+
+	**\*\*print("GA")\*\***
+
+
+
+	**\*\*print("GE")\*\***
+
+
+
+    **\*\*wish()\*\***
+
+
+
+
+class
+**class Account:**
+
+    **\*\*pass -----------------------------------------maintain dummy block\*\***
+
+
+
+
+
+
+
+
+
+
+
+
+
+name in python is called identifier
+Identifier rules
+Identifiers should contain only a-z, A-Z, 0-9, _
+Identifiers should not start with digits 0-9
+Should not contain special character/symbols
+Identifiers should not use keywords as identifier
+Case Sensitive
+
+6
+Keywords
+import keyword
+print(keyword.kwlist)
+print(len(keyword.kwlist))
+
+Output:
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+35
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day-3
+Datatypes
+by using type command we find the datatype
+by default type concept is not available based on provided value it is considered --- in python everything is object
+** **
+<class 'int'>
+<class 'float'>
+<class 'str'>
+<class 'complex'>
+<class 'bool'>
+
+<class 'list'>
+<class 'tuple'>
+<class 'set'>
+<class 'dict'>
+
+<class 'byte'>
+<class 'bytearray'>
+<class 'frozenset'>
+
+<class 'range'>
+<class 'non range'>
+
+Program
+
+eid=101
+ename="Rahul"
+esal=45000.45
+avail=True
+print(type(eid))
+print(type(ename))
+print(type(esal))
+print(type(avail))
+
+
+Inbuilt Functions
+print()
+type()
+id()
+len()
+input()
+min()
+max()96
+
+int()
+float()
+str()
+complex()
+bool()
+list()
+tuple()
+set()
+dict()
+byte()
+bytearray()
+frozenset()
+range()
+non range()
+
+Mutable vs Immutable
+outoff 14 4 are mutable 10 are immutable
+
+Mutable
+list
+bytearray
+set
+dict
+-------------------------------------------------------------------------------------
+
+difference between byte and bytearray
+byte:
+eg: b=([10,20,30,40,50])
+         **0, 1, 2, 3, 4,**
+
+
+
+
+b=bytes([10,20,30,40])
+for value in b:
+    **print(value)**
+
+output:10 20 30 40
+
+eg2:b=bytes([10,20,30,40])
+b[0] = 100
+#TypeError: 'bytes' object does not support item assignment
+for value in b:
+    **print(value)**
+
+
+
+
+#Bytes - object is Immutable object
+
+bytearray:it is mutable
+
+          **ba=bytearray(\[10,20,30,40])**
+
+ba[0] = 100
+#TypeError: 'bytes' object does not support item assignment
+for value in ba:
+    **print(value)**
+
+
+
+
+#Bytes - object is Immutable object
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Day-4
+In Python everything is object only
+
+how to represent int datatype
+
+Decimal (Deca) (10)  0-9
+a=15
+
+Binary Format 0,1
+b=0b111
+
+Octal Format (8) 0-7
+c=0o17
+
+Hexa Decimal Format(16)   0-9 a,b,c,d,e,f A,B,C,D,E,F
+d=0xf
+
+Program:
+a=15
+b=0b1111
+c=0o17
+d=0xf
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+Output:
+<class 'int'>
+<class 'int'>
+<class 'int'>
+<class 'int'>
+
+a=15
+print(int(a))   ----- int is
+print(bin(a))
+print(oct(a))
+print(hex(a))
+
+
+
+String ---- Sequence of charaters either with single quotes or double quotes
+
+ename="Rahul"
+avail='Y'
+print(type(ename))
+print(type(avail))
+output:
+<class 'str'>
+<class 'str'>
+
+tuple-- it holds multiple values
+
+eids=101,102,103 ----------------------by default it is tuple
+print(eids)
+print(type(eids))
+Output:
+(101, 102, 103)
+<class 'tuple'>
+
+List Data Structure
+
+Group of elements/values/objects as one entity
+Allowed duplicates and heterogeneous elements
+list elements are storing based on indexing
+index values starts from 0 to n-1 and negative indexing is possible
+Insertion order maintained
+Iterable Object -- using for and while
+When to use:
+IF u want to allow duplicates use list
+
+CREATE
+[] ---- empty list
+eids=[101,102,103]   ---- group of elements
+numbers=[10,10,20,10,30]    ----allow duplicates
+l=[10,20.5,"Rahul",False,[],{}]  ------ allow heterogeneous elements
+
+READ
+print(a)
+print(eids)
+print(numbers)
+print(l)
+
+
+create
+enames=["Rahul","Sonia","Modi","Priya"]
+index     0         1       2      3
+         **-4        -3      -2     -1**
+
+Read
+print(enames)
+How to read list elements? using indexing
+print(enames[0])
+print(enames[1])
+print(enames[2])
+print(enames[3])
+print(enames[4])-----------Index Error-List index out of range
+
+
+
+
+
+
+
+
+day-8
+-----------------------------------------------------------------------------------------------------------------------------------
+https://www.kaggle.com/learn
+
+Control flow statements in python
+case-1:
+execute based on condition ---------conditional statements
+if
+if -else
+if -elif-else
+note:in python there is no switch case
+case-2:
+executing statements n number of times ---- iterative statements
+for loop
+while
+note: in python no do while loop
+
+while loop
+initialize statements
+while conditional statement:
+**st1**
+
+	**st2**
+
+	**increment/decrement**
+
+print Gm 10 times
+i=1
+while i<=10:
+**print("GM")**
+
+	**i=i+1**
+
+
+
+
+
+
+
+
+
+
+WAP TO PRINT FIRST 10 EVEN NUMBERS: 2 4 6 8 10 12 14 16 18 20
+>>i=2
+while i<=20:
+print(i)
+i=i+2
+o/p:o/p comes line by line .....if we want op side by side use end="\t"
+eg: print(i,end="\t")
+
+
+for loop
+iterate your sequences
+list
+tuple
+set             group of elements
+str
+bytes
+ba
+fz
+range
+
+
+for element in seq:
+**st1**
+
+	**st2**
+
+	**st2**
+
+
+
+
+
+
+
+LIST
+eids=[101,102,103,104]
+for eid in eids:
+**print(eid)**
+
+
+
+
+o/p:
+101
+102
+103
+104
+
+tuple
+
+enames=("RG","SG","PG","Modi")
+for ename in enames:
+**print(ename)**
+
+
+
+
+
+
+
+
+
+
+set
+numbers={10,20,10,20}
+for num in numbers:
+**print(num)**
+
+
+
+
+o/p:
+10
+20 -------------------------no order guarantee
+
+
+String
+ename="Rahul"
+for ch in ename:
+print(ch)
+
+o/p:
+r
+a
+h
+u
+l
+
+
+-------------------------------------------------------------------------------------------
+class-8
+
+list
+
+group of elements as one entity
+duplicates and heterogeneous elements are allowed 
+list elements storing based on indexing
+negative indexing is possible
+we can iterate list object using for loop and while loop
+list is a mutable object
+
+CREATE
+eids=[101,102,103,104]
+l1=[10,20.5,"Rahul",[],(),10,True]
+
+tuple
+group of elements as on entity
+allowed duplicates and heterogeneous 
+indexing is possible 0 to n-1
+negative indexing is possible
+we can iterate using for loop and while loop
+tuple is immutable
+tuple is readonly version of list
+order maintained
+ 
+CREATE
+t1=()
+eids=(101,102,103,104)
+
+
+Set
+group of elements as one entity
+duplicates are not allowed
+we can iterate using only for loop
+insertion order not mentioned
+set is mutable object
+
+
+
+CREATE
+s1={ } ---dict type
+s2=set()  --- how to create empty set
+eids={101,102,101,101}
+s3={10,10,20.5,"Rahul",[],{10}}
+
+
+Dict
+group of key value pairs as one entity
+duplicates keys are not allowed but values are allowed
+indexing not applicable
+no order guarantee
+dict is mutable object
+
+
+
+d1={}
+emp={'eid:101,
+     'ename'='Rahul',
+     'esal'=45000}
+
+user={'uname':'Rahul,
+      'loc': 'wayaanad',
+       'loc':'No'}
+
+
+--------------------------------------------------------------------------
+class-9
+
+range
+for value in range(5):
+**print(value)       range:generate seq of integers**
+
+o/p:
+1
+2
+3
+4
+
+
+range()[start], end[step])
+
+
+range(5)    range(0,5-1,1)
+range(1,10)  range(1,10-1,1)
+range(1,10,2) range(1,10-1,2)
+
+program
+for num in range(1,10,2):
+print(num)
+
+
+
+
+functions
+---------group of statements for specific task which executes business logic and returns a value
+
+def login():
+	pass ------it is a dummy block
+
+
+execute business login and [return value]
+
+-- code reusability
+
+def login():
+	print("Login Success")
+
+login()
+login()
+
+login()
+
+
+def add():
+     pass
+add(10,20)
+
+o/p:
+TypeError: add() takes 0 positional arguments but 2 were given
+
+def add(a,b):   #a,b are formal arguments
+    print(a+b)
+
+add(10,20)
+add(1,2)
+add("Rahul","Gandhi")   ----string concatination
+add(10,"Rahul")
+
+o/p:
+30
+3
+RahulGandhi
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+
+a,b are arguments
+arguments are divided into 4 types
+positional arguments
+def calc(a,b):
+	print(a-b)
+
+calc(100,200) #-100
+calc(200,100) # 100
+
+
+
+
+keyword arguments
+def calc(a,b):
+	print(a-b)
+
+calc(a=100,b=200) #-100
+calc(b=200,a=100) #-100
+
+default arguments
+def sum(a,b,c=100):   ------------c=100 is the default arguments 
+	print(a+b+c)              note: default arguments should be in the last only
+
+sum(1,2,3) #6
+sum(1,2) #103
+
+
+variable length arguments
+def sum(a,*b):
+    print("a :",a,"b: ",b)
+    
+    
+sum(10,20)
+sum(10,20,30)
+sum(10,20,30,40)
+sum(10,20,30,40,50)
+sum(10,20,30,40,50,60)
+
+o/p
+a : 10 b:  (20,)
+a : 10 b:  (20, 30)
+a : 10 b:  (20, 30, 40)
+a : 10 b:  (20, 30, 40, 50)
+a : 10 b:  (20, 30, 40, 50, 60)
+
+
+
+def get_bal(name,acc_bal):  
+    min_bal=500
+    return acc_bal-min_bal
+bal1=get_bal("Rahul",5000)
+print(bal1)
+bal2=get_bal("soniya",15000)
+print(bal2)
+
+o/p:
+4500
+14500
+
+
+break ------used in loops which stops iteration
+return -----come out from block
+continue ----skip the current iteration and execute next
+
+
+
+
+List DataStructure Methods
+
+CREATE
+l1=[]
+l2=list()
+eids=[101,102,103,104,101,102]
+	0  1   2   3   4   5
+
+
+READ
+p(eids.count(101)) ----- return no.of occurances of specified element
+eids.index(102)
+return index of element
+len(eids)
+print(len({101,101,102})  #2   ---inbuilt function
+
+
+
+UPDATE
+eids.append(105) ---------add element end of list
+
+eids.insert(1,109) --------insert element @specified index
+
+eids.extend([110,111,112])
+
+eids.reverse()
+
+eids.sort()
+
+
+DELETE
+
+eids.pop() --------remove last element from list() and return it
+
+eids.remove(104) ------remove specified element from list
+
+eids.clear()  -----------remove all elements from list
+
+
+
+list.pop()   vs    list.remove(ele)
+list.pop()
+remove last element from list
+l1=[]    #empty list
+l1.pop()   #value error
+
+
+list.remove(ele)
+remove specific element from list
+l1=[]
+l1.remove(10)  #value error
+
+
+SET datastructure methods
+CREATE
+eids=)101,102,101,102,103}
+eids=eids.copy()
+
+
+READ
+eids.count(101)
+
+UPDATE
+eids.add(103)
+eids.update({104,105,106})
+
+DELETE
+eids.pop()  #remove orbitary element
+eids.remove(101) #remove specified element from set
+if specified element not present it return key error
+
+eids.discard(102)
+if specified element not present it will return any error
+eids.clear() #remove all elements
+
+
+dict methods
+CREATE
+d1={}
+print(type(d1))
+
+emp={'eid':101,'ename':'Rahul','esal':45000,'loc':'Wayanad'}
+#read
+#read all keys , values  and key,value pairs
+keys=emp.keys()
+values=emp.values()
+kv=emp.items()
+print(keys)
+print(values)
+print(kv)
+
+
+
+
+MODULES and Packages
+
+every python file act as module
+data.py --- data is module
+two types --- user defined and inbuilt
+inbuilt are:
+1.math.py
+2.random.py
+3.json.py
+4.csv.py
+5.os.py
+
+ 
+Function ----- inner function -----nameless anonymous/lambda function------[map, filter, reduc] ---Decorator ----Generator
+
+inner function --- writing a function inside a function
+
+
+File Handling
+
+text file mode
+r
+w
+a
+x-exclusive
+
+
+r+ ---read and write
+w+ --- write and read
+a+ --- append and read
+
+
+default is r
+
+Binary file mode
+
+rb
+wb
+ab
+xb
+
+rb+
+wb+
+ab+
+
+
+
+class-18-REQUESTS-JSON-CSV
+-----------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+1.what is rest api?-----------------------------module/requests
+2.how to invole rest api's?
+3.how to test rest api?--------------------using post man tool
+HTTP METHODS:------------------------------------------------------------HTTP TOOLS CODE:
+-----------------                                                         ------------------
+GET                                                                         1XX
+POST                                                                        2XX
+PUT                                                                         3XX
+DELETE                                                                      4XX 
+PATCH                                                                       5XX
+
+USAGE:fetch all users
+REST-APIURL:----------------------------------
+METHOD:GET
+REQFEILDS:NONE
+ACESS TYPE:PUBLIC
+
+PIP INSTALL REQUESTS
+WRITE PY SCRIPT;
+INVOKE REST API AND PRINT ALL USER NAMES?
+
+REQUEST METHODS:
+.REQUEST GET()
+.REQUEST POST()
+.REQUEST PUT()
+.REQUEST DELETE()
+
+
+
+Task
+Rest API Info:
+usage: fetch all users
+Rest API URL:https://jsonplaceholder.typicode.com/users
+Method Type: GET
+Access Type:Public
+Invoke Rest API 
+and Write uid, uname, email, city
+into  a)new JSON File
+      b)new CSV File 
+      c)new user table - mysql
+      d)new user collection - mongodb
+class-20: 
+-------------
+ERROR HANDLINGS: 1.try,2.catch,3.finally,4.raise
+-------------------
+using try and except blocks
+1.try: risky statements in try block
+2.except:handling/alternative
+
+class-21:
+-----------
+pdbc:
+---------
+pip install mysql-connector-python
+
+in cmd:
+mySQL -uroot -proot
+CREATE DATABASE dbfour;
+
+in vs code;
+dbcon=none
+try:
+dbcon=
+
+
+
+
+class 22:
+------------------------------
+CRUD OPERATIONS USING CONNECTIVITY OF PDBC-MySQL:
+----------------------------------------------
+user='root'
+password='root'
+host='localhost'
+1)insert 1 row
+2)insert multiple rows
+3)update data
+4)delete
+5)fetch data
+
+STEP:1:
+---------
+1.establish connectivity
+2.create cursor
+3.execute sql-st using
+...cur.execute(sql-st)
+...cur.executemany(sql-st,data)
+4.connect change
+5.close the connection
+
+eg program:
+--------------
+OPEN SQL AND CONNECT THE SERVER
+CREATE TABLE EMPLOYEES
+
+IN VSCODE:
+-------------
+import mysql.connector
+dbcon=None 
+cursor=None 
+try:
+    dbcon=mysql.connector.connect(host='localhost',
+                                  user='root',
+                                  password='root',
+                                  database='db4') 
+    print(dbcon.is_connected())
+    cursor=dbcon.cursor()
+    sql_st='''
+           insert into employees
+           values
+           (101,"Rahul","rg@gmail.com","Bangalore");
+           '''
+    cursor.execute(sql_st)
+    dbcon.commit()
+    print("Data Inserted Successfully!")
+except mysql.connector.Error as err:
+    print(err)
+finally:
+    cursor.close()
+    dbcon.close()
+ 
+
+Task
+Rest API Info:
+usage: fetch all users
+Rest API URL:https://jsonplaceholder.typicode.com/users
+Method Type: GET
+Access Type:Public
+Invoke Rest API 
+and Write uid, uname, email, city
+into  a)new JSON File
+      b)new CSV File 
+      c)new user table - mysql
+      d)new user collection - mongodb
+
+CLASS-23
+
+MONGODB Connection 
+pip install pymongo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

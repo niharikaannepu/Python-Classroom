@@ -20,7 +20,7 @@ for user in users:
 #Load into 
 #a)CSV File  b)JSON File
 cw_obj=csv.writer(fp2)
-cw_obj.writerow(["uid","unmae","email","city"])
+cw_obj.writerow(["uid","uname","email","city"])
 cw_obj.writerows(user_csv_data)
 print("New CSV File Created Successfully")
 
